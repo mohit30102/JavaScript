@@ -1,0 +1,62 @@
+<!-- 3. WAP program to find out max from 4 numbers using nested if. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>max from 4 numbers</title>
+</head>
+
+<body>
+    <script>
+        let a, b, c, d;
+        a = parseInt(prompt("Enter value of A"));
+        b = parseInt(prompt("Enter value of B"));
+        c = parseInt(prompt("Enter value of C"));
+        d = parseInt(prompt("Enter value of D"));
+
+        if (a > b) {
+            if (a > c) {
+                if (a > d) {
+                    document.write('A is maximum');
+                }
+                else {
+                    document.write('B is maximum');
+                }
+            }
+            else {
+                if (c > d) {
+                    document.write('C is maximum');
+                }
+                else {
+                    document.write('D is maximum');
+                    
+                }
+            }
+        }
+        else {
+            if (b > c) {
+                if (b > d) {
+                    document.write('B is maximum');
+                }
+                else {
+                    document.write('D is max');
+                }
+            }
+            else {
+                if (c > d) {
+                    document.write('C is max');
+                } else {
+                    document.write('D is max');
+                    
+                }
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>
